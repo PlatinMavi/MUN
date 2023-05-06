@@ -12,11 +12,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/8ae22b070a.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-white dark:bg-gray-900">
     
     <!-- notification -->
-    <div class="relative sticky top-0 isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1 z-20">
+    <div class="s relative sticky top-0 isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1 z-20">
         <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
         <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
         </div>
@@ -41,7 +45,7 @@
     <!-- notification end -->
 
     <!-- navbar -->
-    <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 z-30">
+    <nav class="s bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 z-30">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="index.html" class="flex items-center">
             <img src="Logo.jpeg" class="h-16 mr-3" alt="DERMUN Logo" />
@@ -93,19 +97,18 @@
 
     <!-- Remaining Time -->
  
-    <section class="bg-center bg-cover bg-no-repeat bg-[url('threshold.png')] bg-gray-700 bg-blend-multiply">
-        <!-- buradaki resim değişecek -->
+    <section class="bg-center bg-cover bg-no-repeat bg-[url('threshold2.png')] bg-gray-700 bg-blend-multiply d">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
             <div class="container mx-auto my-8 text-center text-white">
                 <h2 class="text-6xl font-bold m-4">Remaining Time Till The Fun Ends:</h2>
-                <div class="flex mx-auto w-max lg:text-6xl p-4 md:text-4xl sm:text-4xl">
-                    <p id="Day" class="bg-slate-700 p-4 rounded-2xl border-4 border-slate-900 mr-4"></p>
-                    <p class="pt-4">:</p>
-                    <p id="Hour" class="bg-slate-700 p-4 rounded-2xl border-4 border-slate-900 mx-4"></p>
-                    <p class="pt-4">:</p>
-                    <p id="Minute" class="bg-slate-700 p-4 rounded-2xl border-4 border-slate-900 mx-4"></p>
-                    <p class="pt-4">:</p>
-                    <p id="Second" class="bg-slate-700 p-4 rounded-2xl border-4 border-slate-900 ml-4"></p>
+                <div class="flex mx-auto font-bold w-max lg:text-8xl p-4 md:text-4xl sm:text-4xl">
+                    <p id="Day" class="bg-slate-700 p-2 rounded-2xl border-4 border-slate-900 mr-4 sm:mr-2"> <span class="font-light">D</span> </p>
+                    <!-- <p class="pt-4">:</p> -->
+                    <p id="Hour" class="bg-slate-700 p-2 rounded-2xl border-4 border-slate-900 mx-4 sm:mx-2"><span class="font-light">H</span></p>
+                    <!-- <p class="pt-4">:</p> -->
+                    <p id="Minute" class="bg-slate-700 p-2 rounded-2xl border-4 border-slate-900 mx-4 sm:mx-2"><span class="font-light">M</span></p>
+                    <!-- <p class="pt-4">:</p> -->
+                    <p id="Second" class="bg-slate-700 p-2 rounded-2xl border-4 border-slate-900 ml-4 sm:ml-2"><span class="font-light">S</span></p>
                 </div>
             </div>
             <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
@@ -122,8 +125,8 @@
     <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
 
     <!-- about event -->
-    <div class="w-2/3 mx-auto">
-        <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row ">
+    <div class="s w-2/3 mx-auto">
+        <a href="#" class="flex flex-col items-center bg-white  rounded-lg md:flex-row ">
             <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="Logo.jpeg" alt="">
             <div class="flex flex-col justify-between p-4 leading-normal">
                 <h5 class="mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">About DERMUN'23</h5>
@@ -142,7 +145,7 @@
     <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
 
     <!-- extra info -->
-    <div class="mx-auto w-max grid grid-cols-2 mt-12">
+    <div class="s mx-auto w-max grid grid-cols-2 mt-12">
         <div class="border-b-2 border-r-2 border-blue-500 text-center p-4">
             <i class=" fa-solid fa-handshake text-6xl" style="color: #005eff;"></i>
             <h4 class="text-lg font-bold text center">
@@ -173,14 +176,14 @@
     <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
 
     <!-- cometees -->
-    <h1 class="text-6xl font-bold w-max mx-auto mt-4">
+    <h1 class="s text-6xl font-bold w-max mx-auto mt-4">
         Cometees
     </h1>
-    <div class="w-max gap-6 mt-8 mx-auto grid grid-cols-1 text-center md:grid-cols-2 lg:grid-cols-2">
+    <div class="s w-max gap-6 mt-8 mx-auto grid grid-cols-1 text-center md:grid-cols-2 lg:grid-cols-2">
         
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
-                <img class="rounded-t-lg" src="interpol.png" alt="" />
+                <img class="rounded-t-lg" src="v1.png" alt="" />
             </a>
             <div class="p-5">
                 <a href="#">
@@ -196,7 +199,7 @@
 
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
-                <img class="rounded-t-lg" src="interpol.png" alt="" />
+                <img class="rounded-t-lg" src="v1.png" alt="" />
             </a>
             <div class="p-5">
                 <a href="#">
@@ -212,7 +215,7 @@
      
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
-                <img class="rounded-t-lg" src="interpol.png" alt="" />
+                <img class="rounded-t-lg" src="v1.png" alt="" />
             </a>
             <div class="p-5">
                 <a href="#">
@@ -228,7 +231,7 @@
         
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
-                <img class="rounded-t-lg" src="interpol.png" alt="" />
+                <img class="rounded-t-lg" src="v1.png" alt="" />
             </a>
             <div class="p-5">
                 <a href="#">
@@ -249,7 +252,7 @@
     <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
 
     <!-- Schedule -->
-    <div class="container mt-12 mx-auto mb-12">
+    <div class="s container mt-12 mx-auto mb-12">
         <div class="w-3/4 mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div class="border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800">
                 <ul class="w-max mx-auto flex flex-wrap text-sm font-medium text-center text-gray-500 " id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
@@ -571,7 +574,7 @@
 
     <!-- contact us -->
 
-    <section class="bg-white dark:bg-gray-900" id="contact">
+    <section class="s bg-white dark:bg-gray-900" id="contact">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
             <form action="https://formsubmit.co/dermuncontact@gmail.com" method="post" class="space-y-8 i-form">
@@ -597,7 +600,7 @@
     <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
 
     <!-- footer -->  
-    <footer class="bg-gray-800 rounded-lg shadow m-4 mt-24">
+    <footer class="s bg-gray-800 rounded-lg shadow m-4 mt-12">
         <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span class="text-sm text-gray-300 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">DERMUN™</a>. All Rights Reserved.
         </span>

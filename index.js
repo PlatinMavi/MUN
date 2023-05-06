@@ -14,22 +14,22 @@ var x = setInterval(function() {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("Day").innerHTML = days
-    document.getElementById("Hour").innerHTML = hours
-    document.getElementById("Minute").innerHTML = minutes
-    document.getElementById("Second").innerHTML = seconds
+    document.getElementById("Day").innerHTML = days.toString()+'<span class="font-extralight">D</span>'
+    document.getElementById("Hour").innerHTML = hours.toString()+'<span class="font-extralight">H</span>'
+    document.getElementById("Minute").innerHTML = minutes.toString()+'<span class="font-extralight">M</span>'
+    document.getElementById("Second").innerHTML = seconds.toString()+'<span class="font-extralight">S</span>'
 
     if (days.toString().length === 1){
-        document.getElementById("Day").innerHTML = "0"+days.toString()
+        document.getElementById("Day").innerHTML = "0"+days.toString()+'<span class="font-extralight">D</span>'
     }
     if (hours.toString().length === 1){
-        document.getElementById("Hour").innerHTML = "0"+hours.toString()
+        document.getElementById("Hour").innerHTML = "0"+hours.toString()+'<span class="font-extralight">H</span>'
     }
     if (minutes.toString().length === 1){
-        document.getElementById("Minute").innerHTML = "0"+minutes.toString()
+        document.getElementById("Minute").innerHTML = "0"+minutes.toString()+'<span class="font-extralight">M</span>'
     }
     if (seconds.toString().length === 1){
-        document.getElementById("Second").innerHTML = "0"+seconds.toString()
+        document.getElementById("Second").innerHTML = "0"+seconds.toString()+'<span class="font-extralight">S</span>'
     }
 
     if (distance < 0) {
