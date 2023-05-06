@@ -9,12 +9,28 @@ var x = setInterval(function() {
 
     var distance = countDownDate - now;
 
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var days= Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("Countdown").innerHTML = days + " Day " + hours + " Hour "+ minutes + " Minute " + seconds + " Second ";
+    document.getElementById("Day").innerHTML = days
+    document.getElementById("Hour").innerHTML = hours
+    document.getElementById("Minute").innerHTML = minutes
+    document.getElementById("Second").innerHTML = seconds
+
+    if (days.toString().length === 1){
+        document.getElementById("Day").innerHTML = "0"+days.toString()
+    }
+    if (hours.toString().length === 1){
+        document.getElementById("Hour").innerHTML = "0"+hours.toString()
+    }
+    if (minutes.toString().length === 1){
+        document.getElementById("Minute").innerHTML = "0"+minutes.toString()
+    }
+    if (seconds.toString().length === 1){
+        document.getElementById("Second").innerHTML = "0"+seconds.toString()
+    }
 
     if (distance < 0) {
         clearInterval(x);
