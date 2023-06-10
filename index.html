@@ -652,7 +652,7 @@ Secretary-General’s <br></span>
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-    <script src="index.js"></script>
+    
     <script>
         const modalEl = document.getElementById('info-popup');
         const privacyModal = new Modal(modalEl, {
@@ -666,11 +666,7 @@ Secretary-General’s <br></span>
             privacyModal.hide();
         });
 
-        const acceptPrivacyEl = document.getElementById('confirm-button');
-        acceptPrivacyEl.addEventListener('click', function() {
-            alert('privacy accepted');
-            privacyModal.hide();
-        });
     </script>
+    <script src="index.js"></script>
 </body>
 </html>
