@@ -24,8 +24,42 @@
             document.documentElement.classList.remove('dark')
         }
     </script>
+    
 </head>
 <body class="bg-white dark:bg-gray-900">
+    <!-- popup---- -->
+    <div id="info-popup" tabindex="-1" class="hidden    overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full">
+        <div class="relative p-4 w-full max-w-lg h-full md:h-auto">
+            <div class="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 md:p-8">
+                <div class="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">
+                    <h3 class="mb-3 text-2xl font-bold text-gray-900 dark:text-white">Secretary Generals Letter</h3>
+                    <p class="text-lg h-96 overflow-y-auto">
+                        Dear Participants, <br>
+
+On behalf of DERMUN’23 Model United Nations (MUN) Conference, it is our great pleasure to extend a warm welcome to all participants attending this esteemed event. As the Secretary-General’s, we are honored to have the opportunity to address you all and witness the culmination of your diligent preparations and intellectual prowess. <br>
+
+ DERMUN’23 Conference serves as a platform for aspiring young leaders like yourselves to engage in substantive discussions, exchange diverse perspectives, and collectively seek solutions to the world's most pressing issues. This year, we have meticulously curated a diverse range of committees to stimulate robust debates and foster innovative thinking. We have got five committees,3 English-2 Turkish, which includes General Assembly(GA) like SOCHUM and Special Committees. <br>
+
+We are confident that DERMUN’23 Conference will not only provide you with an enriching experience but also enable you to forge lifelong connections with like-minded individuals who share your passion for international affairs. Embrace the diversity of perspectives within this conference, seize every opportunity for collaboration, and let your ideas inspire positive change. <br>
+
+Lastly, we would like to express our deepest gratitude to the organizing team, advisors, and volunteers who have dedicated their time and efforts to make this event possible. Their commitment and hard work are the pillars on which DERMUN’23 Conference stands. <br>
+On behalf of the entire DERMUN’23 team, we look forward to welcoming you in June in our school. <br>
+Yours sincerely, <br>
+<span class="mb-3 text-2xl font-bold text-gray-900 dark:text-white">
+Eylül YAMAN, <br>
+Kenan Atabey MİRZAOĞLU, <br>
+Secretary-General’s <br></span>
+
+                    </p>
+                </div>
+                <div class="justify-between items-center pt-0 space-y-4 sm:flex sm:space-y-0">
+                    <div class="items-center space-y-4 sm:space-x-4 sm:flex sm:space-y-0">
+                        <button id="close-modal" type="button"  class="py-2 px-4 w-full text-sm font-medium text-gray-500 bg-white rounded-lg border border-gray-200 sm:w-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-primary-300 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Confirm</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
     
     <!-- notification -->
     <div class="s relative sticky top-0 isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1 z-20">
@@ -190,11 +224,11 @@
     </h1>
     <div class="s w-max gap-6 mt-8 mx-auto grid grid-cols-1 text-center md:grid-cols-2 lg:grid-cols-3">
 
-        <div class="max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class=" max-w-xs  bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
-                <img class="rounded-t-lg" src="Logo.png" alt="" />
+                <img class="rounded-t-lg " src="Logo.png" alt="" />
             </a>
-            <div class="p-5">
+            <div class="p-5 ">
                 <a href="commetees.html" class="inline-flex items-center px-3 py-2 text-xl mt-8 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                     Show All Commetees
                     <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
@@ -202,7 +236,7 @@
             </div>
         </div>
 
-        <div class="max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-xs bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
                 <img class="rounded-t-lg" src="history2.png" alt="" />
             </a>
@@ -218,7 +252,7 @@
             </div>
         </div>
         
-        <div class="max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-xs bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
                 <img class="rounded-t-lg" src="security.png" alt="" />
             </a>
@@ -234,7 +268,7 @@
             </div>
         </div>
 
-        <div class="max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-xs bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
                 <img class="rounded-t-lg" src="sochum2.png" alt="" />
             </a>
@@ -250,7 +284,7 @@
             </div>
         </div>
      
-        <div class="max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-xs bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
                 <img class="rounded-t-lg" src="unesco2.png" alt="" />
             </a>
@@ -266,7 +300,7 @@
             </div>
         </div>
         
-        <div class="max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-xs bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
                 <img class="rounded-t-lg" src="unhrc2.png" alt="" />
             </a>
@@ -354,7 +388,7 @@
                             13:30 - 14:30
                             </p>
                             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            <a href="#" class="hover:underline">FIRST SESSION</a>
+                            <a href="#" class="hover:underline">1ST SESSION</a>
                             </h3>
                         </div>
                 
@@ -363,7 +397,7 @@
                             14:30 - 14:45
                             </p>
                             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            <a href="#" class="hover:underline">Coffee Break</a>
+                            <a href="#" class="hover:underline">Coffe Break</a>
                             </h3>
                         </div>
                 
@@ -372,7 +406,7 @@
                             14:45 - 15:45
                             </p>
                             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            <a href="#" class="hover:underline">SECOND SESSION</a>
+                            <a href="#" class="hover:underline">2ND SESSION</a>
                             </h3>
                         </div>
                 
@@ -390,7 +424,7 @@
                             16:00 - 17:00
                             </p>
                             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            <a href="#" class="hover:underline">THIRD SESSION</a>
+                            <a href="#" class="hover:underline">3RD SESSION</a>
                             </h3>
                         </div>
                 
@@ -408,7 +442,7 @@
                             09:00 - 10:00
                             </p>
                             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            <a href="#" class="hover:underline">FOURTH SESSION</a>
+                            <a href="#" class="hover:underline">4TH SESSION</a>
                             </h3>
                         </div>
                 
@@ -426,7 +460,7 @@
                             10:30 - 11:30
                             </p>
                             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            <a href="#" class="hover:underline">FIFTH SESSION</a>
+                            <a href="#" class="hover:underline">5TH SESSION</a>
                             </h3>
                         </div>
                 
@@ -444,7 +478,7 @@
                             11:45 - 12:45
                             </p>
                             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            <a href="#" class="hover:underline">SIXTH SESSION</a>
+                            <a href="#" class="hover:underline">6TH SESSION</a>
                             </h3>
                         </div>
                 
@@ -462,7 +496,7 @@
                             14:00 - 15:00
                             </p>
                             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            <a href="#" class="hover:underline">SEVENTH SESSION</a>
+                            <a href="#" class="hover:underline">7TH SESSION</a>
                             </h3>
                         </div>
                 
@@ -480,7 +514,7 @@
                             15:15 - 16:30
                             </p>
                             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            <a href="#" class="hover:underline">EIGHTH SESSION</a>
+                            <a href="#" class="hover:underline">8TH SESSION</a>
                             </h3>
                         </div>
                 
@@ -489,7 +523,7 @@
                 </div>
                 <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="statistics" role="tabpanel" aria-labelledby="statistics-tab">
                     <h2 class="text-4xl w-max mx-auto mt-8 font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">
-                        THURSDAY
+                        THRUSDAY
                     </h2>
                     <div class="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
                         <div class="-my-4 divide-y divide-gray-200 dark:divide-gray-700">
@@ -498,7 +532,7 @@
                             09:00 - 10:00
                             </p>
                             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            <a href="#" class="hover:underline">NINTH SESSION</a>
+                            <a href="#" class="hover:underline">9TH SESSION</a>
                             </h3>
                         </div>
                 
@@ -516,7 +550,7 @@
                             10:30 - 11:30
                             </p>
                             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                            <a href="#" class="hover:underline">TENTH SESSION</a>
+                            <a href="#" class="hover:underline">10TH SESSION</a>
                             </h3>
                         </div>
                 
@@ -527,7 +561,17 @@
                             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
                             <a href="#" class="hover:underline">Coffee Break</a>
                             </h3>
-                        </div>             
+                        </div>
+                
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                            11:45 - 13:00
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                            <a href="#" class="hover:underline">Lunch</a>
+                            </h3>
+                        </div>
+                
                         <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
                             <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
                             11:45 - 14:30
@@ -609,8 +653,27 @@
     <!-- fotter end -->
 
 
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="index.js"></script>
+    <script>
+        const modalEl = document.getElementById('info-popup');
+        const privacyModal = new Modal(modalEl, {
+            placement: 'center'
+        });
+
+        privacyModal.show();
+
+        const closeModalEl = document.getElementById('close-modal');
+        closeModalEl.addEventListener('click', function() {
+            privacyModal.hide();
+        });
+
+        const acceptPrivacyEl = document.getElementById('confirm-button');
+        acceptPrivacyEl.addEventListener('click', function() {
+            alert('privacy accepted');
+            privacyModal.hide();
+        });
+    </script>
 </body>
 </html>
