@@ -32,10 +32,6 @@ var x = setInterval(function() {
         document.getElementById("Second").innerHTML = "0"+seconds.toString()+'<span class="font-extralight">S</span>'
     }
 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }
 }, 1000);
 
 //darkmode
